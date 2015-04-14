@@ -1,0 +1,21 @@
+=respond-to($media)
+  @if $media == screen-xs
+    /* Landscape phones and down
+    @media (max-width: $screen-xs)
+      @content
+  @else if $media == screen-sm
+    /* Landscape phone to portrait tablet
+    @media (max-width: $screen-sm)
+      @content
+  @else if $media == screen-md
+    /* Portrait tablet to landscape and desktop
+    @media (min-width: $screen-sm) and (max-width: $screen-md)
+      @content
+  @else if $media == screen-lg
+    /* Large desktop
+    @media (min-width: $screen-lg)
+      @content
+  @else
+    @media only screen and (max-width: #{$media}px)
+      @content
+
